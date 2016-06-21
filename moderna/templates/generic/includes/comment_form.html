@@ -22,7 +22,7 @@
 			 <textarea rows="10" name="comment" id="id_comment" cols="40" class="" placeholder="* Enter Comment here..."></textarea>
 			
 		<p>
-			<button type="submit" class="btn btn-theme margintop10 pull-left">{% trans "Comment" %}</button>
+			<button type="submit" class="btn btn-theme margintop10 pull-left">{% trans "Comment" %}{% csrf_token %}</button>
 				<span class="pull-right margintop20">* Please fill all required form field, thanks!</span>
 		</p>	
 		</div>
